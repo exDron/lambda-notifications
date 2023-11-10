@@ -7,7 +7,8 @@ module.exports.notify = async (event) => {
 
     async function sendToSlack(disallowedUrls) {
         const message = {
-            text: `The following URLs are Disallowed by robots.txt:\n${disallowedUrls.join('\n')}`,
+            channel: 'aws-lambda-integration',
+            text: `The following URLs are Disallowed by robots.txt: ${disallowedUrls.join('\n')}`,
         };
 
         try {
