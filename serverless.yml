@@ -6,4 +6,4 @@ provider:
 
 functions:
   notify-slack:
-    handler: src/handler.notify-slack
+    handler: src/handler
