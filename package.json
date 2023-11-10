@@ -1,0 +1,19 @@
+{
+  "name": "aws-slack-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "lint": "eslint ./src/handler.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.1",
+    "eslint": "^8.53.0",
+    "robots-parser": "^3.0.1",
+    "serverless": "^3.36.0"
+  }
+}

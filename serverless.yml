@@ -1,0 +1,9 @@
+service: slack-lambda
+provider:
+  name: aws
+  region: eu-central-1
+  runtime: nodejs18.x
+
+functions:
+  notify-slack:
+    handler: src/handler.notify-slack
