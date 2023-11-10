@@ -1,7 +1,7 @@
 const axios = require('axios');
 const robotsParser = require('robots-parser');
 
-exports.handler = async (event) => {
+module.exports.notify = async (event) => {
     const urls = event.urls;
     const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL; // Make sure to set this in your Lambda environment variables
 
